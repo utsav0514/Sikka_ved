@@ -1,11 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>ok eveyone its running </h1>
-</body>
-</html>
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="home-wrapper">
+  <div class="home-box">
+    <h1 class="brand-title">Sikka_Ved</h1>
+    <p class="subtitle">Make every rupee count. Plan smarter. Live better.</p>
+    <div class="btn-group">
+      <a href="{% url 'register' %}" class="btn btn-primary">Register</a>
+      <a href="{% url 'login' %}" class="btn btn-outline-secondary">Log In</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block script %}
+  <script src="{% static 'js/home.js' %}"></script>
+{% endblock %}

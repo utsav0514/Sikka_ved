@@ -1,13 +1,33 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sikka_Ved</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Base CSS -->
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+    <!-- Allow child templates to add more CSS -->
+    {% block extra_css %}{% endblock %}
 </head>
 <body>
-    <h1>Hello everyone 
-        
-    </h1>
+
+    <!-- Main content area -->
+    <div class="container">
+        {% block content %}
+        <h1>Hello</h1>
+        {% endblock %}
+    </div>
+
+    <!-- Bootstrap JS (optional but recommended) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Allow child templates to inject custom JS -->
+    {% block script %}{% endblock %}
 </body>
 </html>

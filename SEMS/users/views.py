@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import login
-from .forms import Usercreate  # Import your custom form
+from .forms import Usercreate 
+
+
 
 def register(request):
     if request.method == 'POST':
@@ -12,3 +14,4 @@ def register(request):
     else:
         form = Usercreate()
     return render(request, 'users/register.html', {'form': form})
+

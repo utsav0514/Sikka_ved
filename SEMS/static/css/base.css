@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-image: url('/static/core/images/hello.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.home-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-box {
+    background: rgba(255, 255, 255, 0.96);
+    padding: 50px 40px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    max-width: 480px;
+    width: 100%;
+}
+
+.brand-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #0d6efd;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.btn-group .btn {
+    margin: 0 10px;
+    padding: 10px 24px;
+    font-size: 1rem;
+}
