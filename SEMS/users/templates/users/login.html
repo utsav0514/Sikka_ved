@@ -8,7 +8,7 @@
 
 {% block content %}
 <div class="login-wrapper">
-    <!-- Animated background elements -->
+
     <div class="bg-animation">
         <div class="floating-element element-1"></div>
         <div class="floating-element element-2"></div>
@@ -57,7 +57,8 @@
                     <input type="checkbox" name="remember" class="form-check-input">
                     <span class="ms-2">Remember me</span>
                 </label>
-                <a href="#" class="forgot-password">Forgot password?</a>
+                <a href="{% url 'password_reset' %}" class="forgot-password">Forgot password?</a>
+
             </div>
 
             <button type="submit" class="btn btn-primary login-btn w-100 mb-4">

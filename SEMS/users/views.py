@@ -10,7 +10,7 @@ def register(request):
         if form.is_valid():
             user = form.save()
             login(request, user)
-            return redirect('income_setup')  
+            return redirect('login')  
     else:
         form = Usercreate()
     return render(request, 'users/register.html', {'form': form})

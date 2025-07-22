@@ -1,0 +1,52 @@
+body {
+    background: url('../img/register-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.register-card h2 {
+    font-weight: 600;
+    color: #333;
+}
+
+form label {
+    font-weight: 500;
+}
+
+form input {
+    border-radius: 6px;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
